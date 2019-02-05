@@ -28,6 +28,10 @@ namespace MyApplication
 
         private void resetButton_Click(object sender, System.EventArgs e)
         {
+            usernameTextBox.Text = string.Empty;
+            passwordTextBox.Text = string.Empty;
+
+            usernameTextBox.Focus();
 
         }
 
