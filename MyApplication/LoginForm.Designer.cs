@@ -46,7 +46,6 @@
             this.usernameLabel.Size = new System.Drawing.Size(70, 13);
             this.usernameLabel.TabIndex = 0;
             this.usernameLabel.Text = "&Username:";
-           
             // 
             // passwordLabel
             // 
@@ -56,7 +55,6 @@
             this.passwordLabel.Size = new System.Drawing.Size(66, 13);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "&Password:";
-            
             // 
             // usernameTextBox
             // 
@@ -65,10 +63,9 @@
             this.usernameTextBox.Location = new System.Drawing.Point(88, 12);
             this.usernameTextBox.MaxLength = 20;
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(384, 21);
+            this.usernameTextBox.Size = new System.Drawing.Size(372, 21);
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.UseSystemPasswordChar = true;
-          
             // 
             // passwordTextBox
             // 
@@ -77,13 +74,12 @@
             this.passwordTextBox.Location = new System.Drawing.Point(88, 39);
             this.passwordTextBox.MaxLength = 40;
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(384, 21);
+            this.passwordTextBox.Size = new System.Drawing.Size(372, 21);
             this.passwordTextBox.TabIndex = 3;
-     
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(89, 79);
+            this.loginButton.Location = new System.Drawing.Point(86, 76);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 4;
@@ -94,7 +90,7 @@
             // resetButton
             // 
             this.resetButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.resetButton.Location = new System.Drawing.Point(191, 79);
+            this.resetButton.Location = new System.Drawing.Point(185, 76);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(75, 23);
             this.resetButton.TabIndex = 5;
@@ -104,7 +100,7 @@
             // 
             // registerButton
             // 
-            this.registerButton.Location = new System.Drawing.Point(292, 79);
+            this.registerButton.Location = new System.Drawing.Point(285, 76);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(75, 23);
             this.registerButton.TabIndex = 6;
@@ -114,7 +110,7 @@
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(393, 79);
+            this.exitButton.Location = new System.Drawing.Point(385, 76);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 7;
@@ -128,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.resetButton;
-            this.ClientSize = new System.Drawing.Size(484, 121);
+            this.ClientSize = new System.Drawing.Size(484, 122);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.resetButton);

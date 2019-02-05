@@ -32,7 +32,7 @@ namespace MyApplication
 
         private void exitButton_Click(object sender, System.EventArgs e)
         {
-
+            System.Windows.Forms.Application.Exit();
         }
         
 
