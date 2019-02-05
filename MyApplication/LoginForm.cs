@@ -28,11 +28,15 @@ namespace MyApplication
 
         private void resetButton_Click(object sender, System.EventArgs e)
         {
+            resetForm();
+        }
+
+        public void resetForm()
+        {
             usernameTextBox.Text = string.Empty;
             passwordTextBox.Text = string.Empty;
 
             usernameTextBox.Focus();
-
         }
 
         private void exitButton_Click(object sender, System.EventArgs e)
