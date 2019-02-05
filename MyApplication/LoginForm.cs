@@ -10,10 +10,36 @@ namespace MyApplication
             InitializeComponent();
         }
 
-       
+
         private void loginButton_Click(object sender, System.EventArgs e)
         {
+            //******************************************************
+            //******************************************************
+            //******************************************************
+            if ((string.IsNullOrWhiteSpace(usernameTextBox.Text)) ||
+                (string.IsNullOrWhiteSpace(passwordTextBox.Text)))
+            {
+                //usernameTextBox.Text = usernameTextBox.Text.Trim();
+                //passwordTextBox.Text = passwordTextBox.Text.Trim();
 
+                usernameTextBox.Text = usernameTextBox.Text.Replace(" ", string.Empty);
+                passwordTextBox.Text = passwordTextBox.Text.Replace(" ", string.Empty);
+
+                System.Windows.Forms.MessageBox.Show("Username And Password Is Required");
+                if (usernameTextBox.Text==string.Empty)
+                {
+                    usernameTextBox.Focus();
+                }
+                else
+                {
+                    passwordTextBox.Focus();
+                }
+
+                return ;
+            }
+            //******************************************************
+            //******************************************************
+            //******************************************************
         }
 
         private void registerButton_Click(object sender, System.EventArgs e)
@@ -39,8 +65,8 @@ namespace MyApplication
         {
             System.Windows.Forms.Application.Exit();
         }
-        
 
-       
+
+
     }
 }
