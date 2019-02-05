@@ -46,7 +46,7 @@
             this.usernameLabel.Size = new System.Drawing.Size(70, 13);
             this.usernameLabel.TabIndex = 0;
             this.usernameLabel.Text = "&Username:";
-            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
+           
             // 
             // passwordLabel
             // 
@@ -56,7 +56,7 @@
             this.passwordLabel.Size = new System.Drawing.Size(66, 13);
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "&Password:";
-            this.passwordLabel.Click += new System.EventHandler(this.passwordLabel_Click);
+            
             // 
             // usernameTextBox
             // 
@@ -68,7 +68,7 @@
             this.usernameTextBox.Size = new System.Drawing.Size(384, 21);
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.UseSystemPasswordChar = true;
-            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+          
             // 
             // passwordTextBox
             // 
@@ -79,7 +79,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(384, 21);
             this.passwordTextBox.TabIndex = 3;
-            this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
+     
             // 
             // loginButton
             // 
