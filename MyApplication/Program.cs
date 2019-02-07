@@ -60,10 +60,14 @@ namespace MyApplication
 						IsAdmin = true,
 						IsActive = true,
 
-						Username = "Dariush",
-						Password = "1234512345",
-						FullName = "Mr. Dariush Tasdighi"
-					};
+                        //Username = "Dariush",
+                        //Password = "1234512345",
+                        //FullName = "Mr. Dariush Tasdighi"
+
+                        Username = "Behzad",
+                        Password = "1234512345",
+                        FullName = "Mr. Behzad Shakeri"
+                    };
 
 					databaseContext.Users.Add(adminUser);
 
