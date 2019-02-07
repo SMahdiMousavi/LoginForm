@@ -58,7 +58,7 @@
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.usernameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.usernameTextBox.Location = new System.Drawing.Point(88, 12);
             this.usernameTextBox.MaxLength = 20;
@@ -69,7 +69,7 @@
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.passwordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordTextBox.Location = new System.Drawing.Point(88, 39);
             this.passwordTextBox.MaxLength = 40;
@@ -124,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.resetButton;
-            this.ClientSize = new System.Drawing.Size(484, 122);
+            this.ClientSize = new System.Drawing.Size(484, 121);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.resetButton);
@@ -137,6 +137,7 @@
             this.MinimumSize = new System.Drawing.Size(500, 160);
             this.Name = "LoginForm";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
