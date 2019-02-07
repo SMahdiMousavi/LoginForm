@@ -65,7 +65,6 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(372, 21);
             this.usernameTextBox.TabIndex = 1;
-            this.usernameTextBox.UseSystemPasswordChar = true;
             // 
             // passwordTextBox
             // 
@@ -76,6 +75,7 @@
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.Size = new System.Drawing.Size(372, 21);
             this.passwordTextBox.TabIndex = 3;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             // 
             // loginButton
             // 
@@ -137,7 +137,6 @@
             this.MinimumSize = new System.Drawing.Size(500, 160);
             this.Name = "LoginForm";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
