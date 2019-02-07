@@ -1,10 +1,13 @@
 ﻿using System.Linq;
+using System.Windows.Forms;
 
 namespace MyApplication
 {
 	internal static class Program
 	{
-		static Program()
+        private static Form startupForm;
+
+        static Program()
 		{
 		}
 
@@ -81,29 +84,45 @@ namespace MyApplication
 					databaseContext = null;
 				}
 			}
-			// **************************************************
-			// **************************************************
-			// **************************************************
+            // **************************************************
+            // **************************************************
+            // **************************************************
 
-			// **************************************************
-			//System.Windows.Forms.Application.Run(new StartupForm());
+            // **************************************************
+            //System.Windows.Forms.Application.Run(new StartupForm());
 
-			#region Runing Startup Form and then Disposing!
-			StartupForm startupForm = new StartupForm();
+            //#region Runing Startup Form and then Disposing!
+            //StartupForm startupForm = new StartupForm();
 
-			System.Windows.Forms.Application.Run(startupForm);
+            //System.Windows.Forms.Application.Run(startupForm);
 
-			if (startupForm != null)
-			{
-				if (startupForm.IsDisposed == false)
-				{
-					startupForm.Dispose();
-				}
+            //if (startupForm != null)
+            //{
+            //	if (startupForm.IsDisposed == false)
+            //	{
+            //		startupForm.Dispose();
+            //	}
 
-				startupForm = null;
-			}
-			#endregion /Runing Startup Form and then Disposing!
-			// **************************************************
-		}
-	}
+            //	startupForm = null;
+            //}
+            //#endregion /Runing Startup Form and then Disposing!
+            // **************************************************
+
+            #region Runing LoginForm and then Disposing!
+            LoginForm loginForm = new LoginForm();
+
+            System.Windows.Forms.Application.Run(loginForm);
+
+            if (loginForm != null)
+            {
+                if (loginForm.IsDisposed == false)
+                {
+                    loginForm.Dispose();
+                }
+
+                loginForm = null;
+            }
+            #endregion /Runing LoginForm and then Disposing!
+        }
+    }
 }
