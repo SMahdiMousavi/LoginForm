@@ -5,7 +5,7 @@ namespace MyApplication
 {
 	internal static class Program
 	{
-        private static Form startupForm;
+        //private static Form startupForm;
 
         static Program()
 		{
