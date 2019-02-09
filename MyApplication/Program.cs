@@ -29,26 +29,26 @@ namespace MyApplication
 				databaseContext =
 					new Models.DatabaseContext();
 
-				// **************************************************
-				// **************************************************
+                // **************************************************
+                // **************************************************
 
-				// **************************************************
-				//var users =
-				//	databaseContext.Users
-				//	.ToList()
-				//	;
+                // **************************************************
+                //var users =
+                //	databaseContext.Users
+                //	.ToList()
+                //	;
 
-				//int userCount = users.Count;
-				// **************************************************
+                //int userCount = users.Count;
+                // **************************************************
 
-				// **************************************************
-				//int userCount =
-				//	databaseContext.Users
-				//	.Count();
-				// **************************************************
+                // **************************************************
+                //int userCount =
+                //    databaseContext.Users
+                //    .Count();
+                // **************************************************
 
-				// **************************************************
-				bool hasAnyUser =
+                // **************************************************
+                bool hasAnyUser =
 					databaseContext.Users
 					.Any();
 				// **************************************************
@@ -60,13 +60,13 @@ namespace MyApplication
 						IsAdmin = true,
 						IsActive = true,
 
-                        //Username = "Dariush",
-                        //Password = "1234512345",
-                        //FullName = "Mr. Dariush Tasdighi"
-
-                        Username = "Behzad",
+                        Username = "Dariush",
                         Password = "1234512345",
-                        FullName = "Mr. Behzad Shakeri"
+                        FullName = "Mr. Dariush Tasdighi"
+
+                        //Username = "Behzad",
+                        //Password = "1234512345",
+                        //FullName = "Mr. Behzad Shakeri"
                     };
 
 					databaseContext.Users.Add(adminUser);
