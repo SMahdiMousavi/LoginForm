@@ -17,6 +17,8 @@ namespace MyApplication
             // **************************************************
             // **************************************************
             // **************************************************
+            // علامت|| علامت یای منطقی است
+            //برای بررسی پر یا خالی بودن کنترل های فرم ، کدهای زیر را استفاده می کنیم 
             if (string.IsNullOrWhiteSpace(usernameTextBox.Text) ||
                 string.IsNullOrWhiteSpace(passwordTextBox.Text))
             {
@@ -60,8 +62,10 @@ namespace MyApplication
 
                 Models.User foundedUser =
                     databaseContext.Users
+                    //در دستور زیر به معنی این است که بزرگی و کوچکی حروف برای ما مهم نیستTrue
                     .Where(current => string.Compare(current.Username, usernameTextBox.Text, true) == 0)
                     .FirstOrDefault();
+
 
                 if (foundedUser == null)
                 {
@@ -78,6 +82,7 @@ namespace MyApplication
                     return;
                 }
 
+
                 if (string.Compare(foundedUser.Password, passwordTextBox.Text, ignoreCase: false) != 0)
                 {
                     //System.Windows.Forms.MessageBox
@@ -92,6 +97,7 @@ namespace MyApplication
 
                     return;
                 }
+
 
                 if (foundedUser.IsActive == false)
                 {
@@ -196,6 +202,5 @@ namespace MyApplication
             System.Windows.Forms.Application.Exit();
         }
 
-        
     }
 }
