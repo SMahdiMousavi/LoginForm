@@ -1,12 +1,12 @@
-﻿using Infrastructure;
+﻿
 using System.Linq;
-//using Linq;
+using System.Windows.Forms;
 
 namespace MyApplication
 {
-    public partial class LoginForm : Infrastructure.BaseForm
+    public partial class RegisterForm : Infrastructure.BaseForm
     {
-        public LoginForm()
+        public RegisterForm()
         {
             InitializeComponent();
         }
@@ -19,7 +19,6 @@ namespace MyApplication
             // **************************************************
             // علامت|| علامت یای منطقی است
             //برای بررسی پر یا خالی بودن کنترل های فرم ، کدهای زیر را استفاده می کنیم
-
             if (string.IsNullOrWhiteSpace(usernameTextBox.Text) ||
                 string.IsNullOrWhiteSpace(passwordTextBox.Text))
             {
@@ -65,14 +64,12 @@ namespace MyApplication
                     databaseContext.Users
                     //در دستور زیر به معنی این است که بزرگی و کوچکی حروف برای ما مهم نیستTrue
                     .Where(current => string.Compare(current.Username, usernameTextBox.Text, true) == 0)
-                    .FirstOrDefault();
-
+                   .FirstOrDefault();
 
                 if (foundedUser == null)
                 {
                     //System.Windows.Forms.MessageBox
                     //	.Show("Username is not correct!");
-
                     // دقت کنید که در این حالت پیغام باید گنگ باشد
 
                     System.Windows.Forms.MessageBox
@@ -179,29 +176,25 @@ namespace MyApplication
             ////******************************************************
         }
 
-        private void registerButton_Click(object sender, System.EventArgs e)
-        {
-            Hide();
-
-        }
-
         private void resetButton_Click(object sender, System.EventArgs e)
         {
             resetForm();
         }
 
-        public void resetForm()
+        private void resetForm()
         {
             usernameTextBox.Text = string.Empty;
             passwordTextBox.Text = string.Empty;
+            fullnameTextBox.Text = string.Empty;
 
             usernameTextBox.Focus();
         }
+
 
         private void exitButton_Click(object sender, System.EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
         }
-
     }
 }
+
