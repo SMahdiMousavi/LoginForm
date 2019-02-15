@@ -181,7 +181,9 @@ namespace MyApplication
 
         private void registerButton_Click(object sender, System.EventArgs e)
         {
-            Hide();
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show();
+
 
         }
 

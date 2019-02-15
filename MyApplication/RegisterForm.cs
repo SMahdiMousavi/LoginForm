@@ -6,6 +6,8 @@ namespace MyApplication
 {
     public partial class RegisterForm : Infrastructure.BaseForm
     {
+        private object usernameTextbo;
+
         public RegisterForm()
         {
             InitializeComponent();
@@ -191,10 +193,34 @@ namespace MyApplication
         }
 
 
+        
+
+        private void registerButton_Click(object sender, System.EventArgs e)
+        {
+            Models.DatabaseContext databaseContext = null;
+
+            try
+            {
+                databaseContext = new Models.DatabaseContext();
+                Models.User user =
+                    databaseContext.Users
+                    .Where(current => string.Compare(current.Username, usernameTextBox.Text, true) == 0)
+                    .FirstOrDefault();
+
+                if (user != null) ; 
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
+        }
+
         private void exitButton_Click(object sender, System.EventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            this.Close();
         }
+
     }
 }
 

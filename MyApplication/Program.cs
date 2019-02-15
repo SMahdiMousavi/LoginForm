@@ -112,19 +112,35 @@ namespace MyApplication
             //#endregion /Runing Startup Form and then Disposing!
             // **************************************************
 
+            //#region Runing LoginForm and then Disposing!
+            //LoginForm loginForm = new LoginForm();
+
+            //System.Windows.Forms.Application.Run(loginForm);
+
+            //if (loginForm != null)
+            //{
+            //    if (loginForm.IsDisposed == false)
+            //    {
+            //        loginForm.Dispose();
+            //    }
+
+            //    loginForm = null;
+            //}
+            //#endregion /Runing LoginForm and then Disposing!
+
             #region Runing LoginForm and then Disposing!
-            LoginForm loginForm = new LoginForm();
+            MainForm MainForm = new MainForm();
 
-            System.Windows.Forms.Application.Run(loginForm);
+            Application.Run(MainForm);
 
-            if (loginForm != null)
+            if (MainForm != null)
             {
-                if (loginForm.IsDisposed == false)
+                if (MainForm.IsDisposed == false)
                 {
-                    loginForm.Dispose();
+                    MainForm.Dispose();
                 }
 
-                loginForm = null;
+                MainForm = null;
             }
             #endregion /Runing LoginForm and then Disposing!
         }
