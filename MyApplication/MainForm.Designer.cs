@@ -67,6 +67,7 @@
             this.updateProfileToolStripMenuItem.Name = "updateProfileToolStripMenuItem";
             this.updateProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.updateProfileToolStripMenuItem.Text = "Update Profile";
+            this.updateProfileToolStripMenuItem.Click += new System.EventHandler(this.updateProfileToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 

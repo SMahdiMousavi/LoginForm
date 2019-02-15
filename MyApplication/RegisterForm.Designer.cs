@@ -51,13 +51,12 @@
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(92, 124);
+            this.loginButton.Location = new System.Drawing.Point(295, 124);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(75, 23);
             this.loginButton.TabIndex = 8;
             this.loginButton.Text = "&Login";
             this.loginButton.UseVisualStyleBackColor = true;
-            
             // 
             // resetButton
             // 
@@ -70,7 +69,7 @@
             // 
             // registerButton
             // 
-            this.registerButton.Location = new System.Drawing.Point(295, 124);
+            this.registerButton.Location = new System.Drawing.Point(92, 124);
             this.registerButton.Name = "registerButton";
             this.registerButton.Size = new System.Drawing.Size(75, 23);
             this.registerButton.TabIndex = 6;
